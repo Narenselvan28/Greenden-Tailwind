@@ -1,0 +1,75 @@
+<style>
+    .whole {
+        display: grid;
+        grid-template-rows: 1fr 8fr 1fr;
+    }
+
+    .header {
+        background-color: aqua;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .aside {
+        background-color: aquamarine;
+    }
+
+    .bside {
+        background-color: blue;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .empty {
+        background-color: blue;
+    }
+
+    .article {
+        background-color: rgb(255, 85, 0);
+        display: grid;
+       grid-template-rows: 1fr 2fr;
+    }
+
+    .imga {
+        background-color: blueviolet;
+        margin: 5px;
+    }
+
+    .x{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .foot {
+        background-color: aqua;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+<div class="whole">
+    <div class="header">header</div>
+    <div class="middle">
+        <div class="aside">Aside</div>
+        <div class="bside">
+            <div class="empty"></div>
+            <div class="article">
+                <div>
+                    <p>Article</p>
+                </div>
+                <div class="x">
+                    <div class="imga">img</div>
+                    <div class="imga">img</div>
+                    <div class="imga">img</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="foot">foot</div>
+</div>
