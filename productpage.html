@@ -8,30 +8,48 @@
 
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="bg-green-100 z-10 p-3 sticky top-0 flex justify-between items-center shadow-xl ">
-        <a href="index.html" class="cursor-default"><h1 class="text-2xl ml-5">GREENDEN</h1></a>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 w-8 md:hidden">
+       <!-- Navbar -->
+       <nav class="bg-green-100 z-10 p-3 sticky top-0 flex justify-between items-center shadow-xl ">
+        <h1 class="text-2xl ml-5">GREENDEN</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" id="menub" viewBox="0 0 24 24" fill="currentColor"
+            class="size-6 w-8 cursor-pointer md:hidden">
             <path fill-rule="evenodd"
                 d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
                 clip-rule="evenodd" />
         </svg>
 
-        <ul class="flex gap-5  text-gray-800 hidden md:flex">
-            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+        <ul class=" flex gap-5  text-gray-800 hidden md:flex ">
+            <li><a class="hover:underline hover:text-black " href="index.html">Home</a></li>
             <LI><a class="hover:underline hover:text-black underline" href="productpage.html"> Products</a></LI>
             <li><a class="hover:underline hover:text-black" href="contact form.html">Contact</a></li>
         </ul>
 
     </nav>
+
+    <!-- side Navbar -->
+    <section class="bg-green-100 fixed z-10 top-0 right-0 transition-all duration-1000 md:hidden" id="sidenav"
+        style="width: 40%; height: 100vh; right: -40%;">
+        <div class="text-right p-5">
+            <p id="csidenav" class="cursor-pointer">x</p>
+        </div>
+        <ul class=" flex flex-col gap-10 items-center  text-gray-800   ">
+            <li><a class="hover:underline hover:text-black " href="index.html">Home</a></li>
+            <LI><a class="hover:underline hover:text-black underline" href="productpage.html"> Products</a></LI>
+            <li><a class="hover:underline hover:text-black" href="contact form.html">Contact</a></li>
+        </ul>
+    </section>
+
+
+    <!-- headersection -->
+   
     <!-- Search -->
      <div class="text-center">
         <h1 class="mt-11 text-3xl font-bold">Our Products</h1>
-        <input type="search" class="mt-5 border-black border-2 w-96 p-3 rounded focus:outline-none" placeholder="Search for a Product ">
+        <input type="search" id="search" class="mt-5 border-black border-2 w-96 p-3 rounded focus:outline-none" placeholder="Search for a Product ">
 
      </div>
     <!-- Products -->
-    <div class="grid text-center     grid-cols-2 p-14 mt-5 gap-10 md:grid-cols-4">
+    <div class="grid text-center     grid-cols-2 p-14 mt-5 gap-10 md:grid-cols-4" id="container">
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p1.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
             <h1>Basil Plant</h1>
@@ -39,59 +57,59 @@
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p2.png" class="inline rounded mb-2  " alt="">
-            <h1>Basil Plant</h1>
+            <h1>Peace lily</h1>
             <p>20$</p>
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p1.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>pothos</h1>
             <p>20$</p>
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p2.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>jade</h1>
             <p>20$</p>
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p1.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>fuchsia</h1>
             <p>20$</p>
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p2.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>ferns</h1>
             <p>20$</p>
         </div>
         
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p3.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>alocasia</h1>
             <p>20$</p>
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p4.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>aloe vera</h1>
             <p>20$</p>
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p3.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>ivy</h1>
             <p>20$</p>
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p4.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>begonia</h1>
             <p>20$</p>
         </div>
         
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p3.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>spider plant</h1>
             <p>20$</p>
         </div>
         <div class=" ml-5 mt-3 mb-3 rounded ">
             <img src="./img/p4.png" class="inline rounded mb-2 hover:shadow-xl transform hover:-translate-y-2" alt="">
-            <h1>Basil Plant</h1>
+            <h1>swiss cheese</h1>
             <p>20$</p>
         </div>
     </div>
@@ -103,5 +121,6 @@
         </p>
         <p class="mt-2">@2025 GreenDen.com</p>
     </section>
+    <script src="productpage.js"></script>
 </body>
 </html>
